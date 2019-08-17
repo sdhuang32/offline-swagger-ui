@@ -3,6 +3,8 @@ One html file that generate swagger UI by loading any given swagger spec. Even n
 Took and modified slightly from [here](https://github.com/swagger-api/swagger-editor/issues/664#issuecomment-376512344).  
 Only support swagger-spec 2.0 (OpenAPI spec 2.0) now.
 
+**NOTE: Only useable directly on Windows. For other OS please modified the file path field specifying the spec. See 'Config' section below.**
+
 ## Usage
 
 1. Download this repo as a zip file and unzip it.
@@ -10,7 +12,7 @@ Only support swagger-spec 2.0 (OpenAPI spec 2.0) now.
 
 ## Config
 
-You can place your own swagger spec files into the directory which 'offline-swagger-ui.html' resides in and change `url` field of the Swagger UI constructor in the html (almost at the end) to your yaml link.  
+You can place your own swagger spec files into the directory which 'offline-swagger-ui.html' resides in and change `url` field of the Swagger UI constructor in the html (almost at the end) to your yaml link. If your OS is not Windows, please check the correct way of specifying a local file and then change `url` field to fit your need.  
 Of course you can also change the `url` field to any spec file available on the Internet such as [this](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/yaml/uber.yaml).
 
 ## Limitations
